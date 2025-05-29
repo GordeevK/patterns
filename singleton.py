@@ -1,17 +1,14 @@
 class GameSettings:
     _instance = None
 
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-            cls._instance.volume = 50
-            cls._instance.difficulty = "Medium"
-        return cls._instance
+    def __init__(self):
+        self.volume = 50
+        self.difficulty = "Medium"
 
     @classmethod
     def get_instance(cls):
         if cls._instance is None:
-            cls._instance = cls()
+            cls._instance = GameSettings()
         return cls._instance
 
 
