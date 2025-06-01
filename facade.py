@@ -23,7 +23,7 @@ class ClimateControlSystem:
 
     @staticmethod
     def set_party_temperature():
-        return "Установлен вечеринный режим (20°C)"
+        return "Установлен вечерний режим (20°C)"
 
     @staticmethod
     def set_night_temperature():
